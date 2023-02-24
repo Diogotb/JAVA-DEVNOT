@@ -1,11 +1,9 @@
-package Operacoes;
-
-public class Operadores {
-
+public class Operacoes {
     public void aritmetica() {
         System.out.println("===============================");
         int adicao = 5 + 2;
-        System.out.println("Resultado da adição de 5 com 2: " + adicao);
+        System.out.println("Resultado da adição de 5 com 2: "
+                + adicao);
         int subtracao = 5 - 2;
         System.out.println("Resultado da subtração de 5 pelo 2: "
                 + subtracao);
@@ -13,19 +11,18 @@ public class Operadores {
         System.out.println("Resultado da multiplicação de 5 pelo 2: "
                 + multiplicacao);
         double divisao = 5.0 / 2.0;
-        System.out.println("Resultado da divisão de 5 pelo 2: " + divisao);
-        double moduloOuResto = 5.0 % 2.0;
+        System.out.println("Resultado da divisão de 5 pelo 2: "
+                + divisao);
+        double moduloOuResto = 5.3 % 2.0;
         System.out.println("Resto da divisão de 5 pelo 2: "
                 + moduloOuResto);
         System.out.println("Fim!");
         System.out.println("===============================");
-
     }
 
     public void atribuicao() {
         System.out.println("===============================");
         int umNumero = 5;
-        // umNumero= umNumero+2;
         umNumero += 2;
         System.out.println("Resultado da adição de 5 com 2: " + umNumero);
         umNumero = 5; // Voltando o valor para 5.
@@ -47,7 +44,7 @@ public class Operadores {
         System.out.println("===============================");
     }
 
-    public void relacionais() {
+    public void relacional() {
         System.out.println("===============================");
         // Faça testes alterando o valor das duas variáveis abaixo.
         int primeiraVariavel = 1;
@@ -73,41 +70,6 @@ public class Operadores {
         boolean primeiraVariavelEDiferenteDaSegunda = primeiraVariavel != segundaVariavel;
         System.out.println("Primeira variável é diferente da segunda? "
                 + primeiraVariavelEDiferenteDaSegunda);
-        System.out.println("Fim!");
-        System.out.println("===============================");
-
-    }
-
-    public void logico() {
-
-        System.out.println("===============================");
-        // Faça testes alterando o valor das quatro variáveis abaixo.
-        // Lembrando, elas podem ser true ou false.
-        boolean usuarioVIP = true;
-        boolean compraComValorAlto = true;
-        boolean menorDeIdade = true;
-        boolean temProdutoAlcoolicoNoCarrinho = true;
-        System.out.println("Usuário é VIP? " + usuarioVIP);
-        System.out.println("A compra tem um valor alto? "
-                + compraComValorAlto);
-        System.out.println("É menor de idade? " + menorDeIdade);
-        System.out.println("Tem produto alcoólico no carrinho? "
-                + temProdutoAlcoolicoNoCarrinho);
-        System.out.println("===============================");
-        boolean aplicarDesconto = usuarioVIP && compraComValorAlto;
-        System.out.println("O desconto deve ser aplicado? "
-                + "(usuarioVIP && compraComValorAlto): "
-                + aplicarDesconto);
-        aplicarDesconto = usuarioVIP || compraComValorAlto;
-        System.out.println("O desconto deve ser aplicado? "
-                + "(usuarioVIP || compraComValorAlto): "
-                + aplicarDesconto);
-        // Leia assim: "se não for menor de idade ou se
-        // não tiver produto alcoólico".
-        boolean permiteConcluirCompra = !menorDeIdade || !temProdutoAlcoolicoNoCarrinho;
-        System.out.println("Pode concluir compra? "
-                + "(!menorDeIdade || !temProdutoAlcoolicoNoCarrinho): "
-                + permiteConcluirCompra);
         System.out.println("Fim!");
         System.out.println("===============================");
     }
