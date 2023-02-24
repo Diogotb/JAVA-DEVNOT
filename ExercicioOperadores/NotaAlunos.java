@@ -7,6 +7,25 @@ public class NotaAlunos {
     public void notaFrequencia() {
         System.out.println("Informe a Nota 1 do aluno:");
         int nota1 = sc.nextInt();
+        System.out.println("Informe a Nota 2 do aluno:");
+        int nota2 = sc.nextInt();
+        // double mediaAluno = (nota1 + nota2)/2;
+        double mediaAluno = nota1;
+        mediaAluno += nota2;
+        mediaAluno /= 2;
+        System.out.println("A média do Aluno é "+mediaAluno);
+        boolean mediaAprovado = mediaAluno >= 50;
+        System.out.println("O Aluno Esta Aprovado por Nota? "+mediaAprovado);
+        System.out.println("Informe a Fequência do Aluno:");
+        int frequenciaAluno = sc.nextInt();
+        boolean frequenciaAprovado = frequenciaAluno >= 75;
+        System.out.println("O Aluno Esta Aprovado por Frequencia? "+frequenciaAprovado);
+        boolean aprovacaoFinal = (mediaAprovado==true)&&(frequenciaAprovado==true);
+        System.out.println("O aluno Esta Aprovado no Curso? "+aprovacaoFinal );
+
+
+
+
 
     }
 }
